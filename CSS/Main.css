@@ -1,0 +1,359 @@
+body , head, ul
+{
+    margin: 0px;
+    padding: 0px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 100%;
+	background-color:#888;
+}
+.menu
+{
+    width: 1240px;
+    height: 43px;
+    background-repeat: repeat-x;
+    background-image: url("../Images/menu.png");
+    background-position: 0px 3px;
+    background-color: gray;
+    min-width: 100%;
+    list-style: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+}
+.menu li
+{
+    line-height: 40px;
+    float: left;
+
+    text-align: left;
+    display: inline-block;
+    cursor: pointer;
+    border-top: 3px solid gray;
+    min-width: 15px;
+}
+.menu .current
+{
+    border-top: 3px solid #32cd32 !important;
+}
+.menu li:hover
+{
+    border-top: 3px solid lime ;
+}
+.menu li:active
+{
+    border-top: 3px solid #6495ed !important;
+}
+
+.menu li a
+{
+
+    padding-right: 15px;
+    color: #999999;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    display: block;
+    position: relative;
+    z-index: 2;
+    width: auto;
+}
+.menu li a:hover
+{
+    color: #CCC;
+}
+.menu li a:active
+{
+    color: #FFF;
+}
+.menu li:hover
+{
+    background-color: rgba(0,0,0,0.2);
+}
+.menu li:active
+{
+    background-color: rgba(0,0,0,0.5) !important;
+}
+.menu li img
+{
+    padding-left: 15px;
+    float: left;
+    margin-right: 5px;
+    height: 40px;
+}
+
+.Logo
+{
+    height: 40px;
+    width: 160px;
+    color: #999999;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    text-align: left;
+    background-color: #111;
+    margin-left: -10px;
+    line-height: 40px;
+    border-top: 3px solid #97D6EB !important;
+
+}
+.Logo a
+{
+
+    font-size: 10px;
+    border: 0px;
+}
+.Logo img
+{
+    border: none;
+}
+a img
+{
+
+    border: 0;
+}
+.WSLogo
+{
+    padding-left: 15px !important;
+    float: right !important;
+    -ms-interpolation-mode: bicubic;
+}
+.WSLogo a
+{
+    float: left !important;
+    padding-left: 0px !important;
+    height: 40px;
+    width: 50px;
+    padding-right: 0px !important;
+
+}
+.WSLogo img
+{
+    -ms-interpolation-mode: bicubic;
+    padding-right: 0px !important;
+    padding-left: 5px !important;
+    float:right;
+}
+.Content-Holder
+{
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    bottom: 0px;
+    top: 43px;
+    left: 0px;
+    right: 0px;
+
+}
+.Content
+{
+    background-color: #999;
+
+    overflow: hidden;
+    float: left;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    display: inline-block;
+    color: white;
+}
+.Head
+{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+}
+.Main-Content
+{
+    width: 1224px;
+    background-color: #EEE;
+    margin: auto;
+    min-height: 100%;
+	color:#333;
+	position:relative;
+	display:block;
+}
+.content-padding
+{
+	padding:10px;
+}
+.content-padding_Disabled
+{
+    padding:10px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+.stylescroll
+{
+    position: absolute;
+	border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -ms-border-radius:4px;
+    right: 4px;
+    bottom: 4px;
+    width: 6px;
+    height: 6px;
+	background: #999999;
+    background: rgba(255,255,255,0.5);
+	float: right;
+}
+h2
+{
+    text-align: center;
+    font-size: 25px;
+    font-family: Geneva;
+    color: #333;
+}
+.target
+{
+    display: inline-block;
+    width: 100%;
+}
+.invisible
+{
+    display:none;
+}
+
+
+
+
+
+.TForm
+{
+    width: 439px;
+    height: auto;
+    margin: auto;
+    text-align: left;
+    background-color: #CCC;
+    padding: 10px;
+    border: 1px solid #888;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+}
+.LBLF
+{
+
+    margin-top:20px;
+    letter-spacing:1px;
+    text-align: left;
+    color: white;
+    display: inline-block;
+
+}
+.KF
+{
+    color: #FFF;
+    font-family: Geneva;
+    text-align: center;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    padding: 2px;
+}
+.InputForm, .TextAreaForm
+{
+    width:200px;
+    height:14px;
+    background:#efefef;
+    border:1px solid #AAA;
+    padding:6px;
+    margin-top:3px;
+    font-size:16px;
+    line-height: 13px;
+    color:#3a3a3a;
+    display: inline-block;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    text-align: left;
+    box-shadow:#3a3a3a 4px 4px;
+    font-family: Geneva;
+}
+.InputForm:focus, .TextAreaForm:focus
+{
+
+    border:1px solid #97D6EB;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    outline: none;
+    box-shadow:#3a3a3a 5px 5px !important;
+
+}
+.TextAreaForm
+{
+    height:200px;
+    width: 400px;
+    box-shadow:#3a3a3a 4px 4px;
+    margin-bottom: 10px;
+    outline: none;
+    max-width: 400px;
+    resize: vertical;
+    max-height: 250px;
+}
+#SubmitForm
+{
+    width:120px;
+    height:40px;
+    background:#EEE;
+    border:1px solid #999;
+    padding:10px;
+    margin-top:3px;
+    font-size:25px;
+    line-height: 15px;
+    color:#000;
+    display: inline-block;
+    border-radius:10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    box-shadow:#3a3a3a 4px 4px;
+
+    outline: none;
+    margin-top: 10px;
+    line-height: 20px;
+    font-family: Geneva;
+}
+@
+#SubmitForm:hover
+{
+    background-color: #dedede;
+}
+#SubmitForm:focus, #SubmitForm:active
+{
+
+    border: 1px solid #97D6EB;
+    background-color: #EEE;
+    line-height: 19px;
+    padding-top: 9px;
+    font-size:22px;
+    width: 118px;
+    height: 38px;
+    margin-top: 11px;
+    border-radius:11px;
+    -moz-border-radius:11px;
+    margin-bottom: 1px;
+}
+.Required
+{
+    color: #a52a2a;
+    margin-left: 0px;
+}
+.RequiredD
+{
+    display: none;
+}

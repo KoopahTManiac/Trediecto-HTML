@@ -1,0 +1,52 @@
+.scroll_div
+{
+    width: 8px;
+    float: right;
+    right: 3px;
+    position: absolute;
+    top: 4px;
+    bottom: 10px;
+    -webkit-transform: translateZ(0);
+    -webkit-transform: translate3d(0, 0, 0);
+}
+.scroll_drag
+{
+    background: #999999;
+    background:rgba(255,255,255,0.5);
+    width: 8px;
+    position: absolute;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -ms-border-radius:4px;
+    color: white;
+    display: none;
+    -webkit-transform: translateZ(0);
+    -webkit-transform: translate3d(0, 0, 0);
+}
+.scroll_divX
+{
+    float: right;
+    position: absolute;
+    right: 10px;
+    left: 3px;
+    bottom: 3px;
+    height: 8px;
+    -webkit-transform: translateZ(0);
+    -webkit-transform: translate3d(0, 0, 0);
+}
+.scroll_dragX
+{
+    background: #999999;
+    background:rgba(255,255,255,0.5);
+    height: 8px;
+    width: 100px;
+    position: absolute;
+    border-radius: 4px;
+    display:none;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -ms-border-radius:4px;
+    -webkit-transform: translateZ(0);
+    -webkit-transform: translate3d(0, 0, 0);
+}

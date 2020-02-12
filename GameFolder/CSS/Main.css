@@ -1,0 +1,110 @@
+/**
+ * Created with JetBrains WebStorm.
+ * User: Zoran
+ * Date: 2013-03-15
+ * Time: 23:06
+ */
+.NoCursor
+{
+    /*
+    cursor: none !important;
+    margin: auto;
+    display: inline-block;
+    width: 800px;
+    */
+}
+.NoCursor2
+{
+
+    cursor: none !important;
+    margin: auto;
+    display: inline-block;
+    width: 800px;
+
+}
+
+.GameContainer
+{
+    position: relative;
+    display: inline-block;
+}
+.MyCanvas
+{
+    margin: auto;
+    display: inline-block;
+    width: 800px;
+    height: 600px;
+}
+
+canvas
+{
+    user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
+}
+.SpaceDown
+{
+    width: 100%;
+    height: 30px;
+    display: inline-block;
+}
+
+
+.ButtonHolder
+{
+    width: 100%;
+    height: 66px;
+    text-align: center;
+    display: inline-block;
+}
+
+.GameContainer
+{
+    background-color: #CCC;
+}
+.Accounts
+{
+    float: left;
+}
+.center
+{
+    margin: auto;
+    display: inline-block;
+    background-color:#000000;
+    width:1204px;
+}
+.BackgroundForGame
+{
+    background-color: #CCC;
+}
+.GameContainer
+{
+    margin: auto;
+    width: 800px;
+}
+
+.input_holder
+{
+    width:1200px;
+    height: 66px;
+    margin:auto;
+    text-align: center;
+
+}
+.Lbl
+{
+    color:white;
+    float: left;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.centerInput
+{
+    width: auto;
+    display: inline-block;
+    margin: auto;
+}

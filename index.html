@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="CSS/Main.css">
+    <link rel="stylesheet" type="text/css" href="CSS/Scroll.css">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+
+    <script type="text/javascript" src="JS/ScrollX.js"></script>
+    <script type="text/javascript" src="JS/ScrollY.js"></script>
+    <script type="text/javascript" src="JS/main.js"></script>
+    <script type="text/javascript" src="JS/main2.js"></script>
+
+    <title>Home</title>
+</head>
+<body onload="scroll();scrollX();LoadScript()" onresize="scroll();scrollX();onResize()">
+    <div class="Holder">
+        <div class="Head" id="Scroll_Area2">
+            <ul class="menu" id="menu">
+                <a link="" onclick="ContentLoad('Home'); return false;">
+                    <li class="Logo">
+                        <img src="Images/Logo.png">TorvaGames.se
+                    </li>
+                </a>
+                <li>
+                    <a link="" onclick="ContentLoad('Home'); return false;"><img src="Images/Metro-Home2-64.png">Hem</a>
+                </li>
+                <li>
+                    <a link="" onclick="ContentLoad('Spelet'); return false;"><img src="Images/Images.png">Spelet</a>
+                </li>
+                <li>
+                    <a link="" onclick="ContentLoad('OmOss'); return false;"><img src="Images/Om-Oss.png">Om Oss</a>
+                </li>
+                <li>
+                    <a link="" onclick="ContentLoad('KontaktaOss'); return false;"><img src="Images/mail.png">Kontakta Oss</a>
+                </li>
+                <li class="WSLogo">
+                    <a href="http://webbstjarnan.se" target="_blank">
+                        WebbStjärnan.se
+                    </a>
+                    <a href="http://webbstjarnan.se" target="_blank">
+
+                        <img title="webbstjarnan" src="http://www.webbstjarnan.se/wordpress/wp-content/uploads/trassel4.png" width="50px" height="40px" alt=""/>
+
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="Content-Holder">
+            <div class="Content" id="Scroll_Area">
+                <div class="Main-Content">
+                    <div class="content-padding" id="Content">
+                        <div class="target" id="Home">
+                            <h2>
+                                Vällkommen Till Vår Sida
+                            </h2>
+                            <p>
+                                Vårat företag erbjuder ett MMO-RPG skjut spel som kan köras via webläsaren
+                            </p>
+                            <p>
+                                Desutom Via Mobila Platformar Som Android eller Iphone
+                            </p>
+
+                        </div>
+                        <div class="invisible" id="Spelet">
+                            <div class="center">
+                                <div class="input_holder">
+                                    <div class="SpaceDown">
+
+                                    </div>
+                                    <div class="centerInput">
+                                        <label class="Lbl">Username:</label>
+                                        <input type="text" id="username" style="float:left">
+                                        <label class="Lbl">Password:</label>
+                                        <input type="text" id="password" style="float:left">
+                                        <input type="button" onClick="UpdateUser()" id="btn1" value="Login" style="float:left">
+                                        <input type="button" onClick="AddUser()" id="btn2" value="Register" style="float:left">
+                                    </div>
+                                </div>
+
+                                <div class="BackgroundForGame">
+                                    <table class="Accounts">
+                                        <tr>
+                                            <th>Supported:</th>
+                                            <th>Browser:</th>
+                                        </tr>
+                                        <tr>
+                                            <td style="color: red">False</td>
+                                            <td>IE 9-</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color: blue">True</td>
+                                            <td>IE 10+</td>
+                                        </tr>
+                                        <tr>
+                                            <td>True</td>
+                                            <td>Firefox (11+)</td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td >True</td>
+                                            <td>Chrome (15+)</td>
+                                        </tr>
+                                        <tr>
+                                            <td >True</td>
+                                            <td>Opera (12.1+)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Username:</th>
+                                            <th>Password:</th>
+                                        </tr>
+                                        <tr>
+                                            <td>test</td>
+                                            <td>test</td>
+                                        </tr>
+                                        <tr>
+                                            <td>test1</td>
+                                            <td>test1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>test2</td>
+                                            <td>test2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>admin</td>
+                                            <td>admin</td>
+                                        </tr>
+                                    </table>
+                                    <div class="GameContainer">
+                                        <canvas id="MyCanvas" class="MyCanvas" width="800" height="600" style="background-color:rgba(204,204,204,1)">
+                                            not supported here
+                                        </canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--[if lt IE 9]>
+                            <script type="text/javascript" src="flashcanvas.js"></script>
+                            <![endif]-->
+                            <script type="text/javascript" src="webgl-2d.js"></script>
+                            <script type="text/javascript" src="JS/stats.js"></script>
+
+                            <script type="text/javascript" src="GameFolder/variables/Player.js"></script>
+                            <script type="text/javascript" src="GameFolder/variables/Bullets.js"></script>
+                            <script type="text/javascript" src="GameFolder/variables/Variables.js"></script>
+                            <script type="text/javascript" src="GameFolder/variables/Mouse.js"></script>
+
+                            <script type="text/javascript" src="GameFolder/Game/LoadTiles.js"></script>
+                            <script type="text/javascript" src="GameFolder/Game/Animate.js"></script>
+                            <script type="text/javascript" src="GameFolder/Game/DrawFunction.js"></script>
+                            <script type="text/javascript" src="GameFolder/Game/Update.js"></script>
+                            <script type="text/javascript" src="GameFolder/Game/Movment.js"></script>
+                            <script type="text/javascript" src="GameFolder/Game/Sound.js"></script>
+
+
+
+
+
+                            <script type="text/javascript" src="GameFolder/Commands.js"></script>
+                            <script type="text/javascript" src="GameFolder/Protokoll.js"></script>
+                            <script type="text/javascript" src="GameFolder/GameCore.js"></script>
+                            <link rel="stylesheet" href="GameFolder/CSS/Main.css">
+                        </div>
+                        <div class="invisible" id="OmOss">
+                            <h2>
+                                Om Oss Sida
+                            </h2>
+                            <p>
+                                Hej Jag(Zoran Ostojic) är en elev på brinellgymnasiet och gör en webbsida till mitt projekt arbete och uf.
+                                <br/>
+                                Alla bilder är  gjorda av mig eller är till gratis användning. all css och javascript är gjort av mig och
+                                <br/>
+                                jag har inte använt några biblotek utan kodat allt själv.
+                                <br/>
+                                <br/>
+                                själva projekt arbetet är att tillvärka ett spel.
+                                <br/>
+                                <br/>
+                                spelet körs i wäbbläsaren och i mobiler.
+                                <br/>
+                                själva spelet kommer vara gratis i webläsaren, men det kommer finnas saker man kan köpa som tillägg
+                                <br/>
+                                och ta bort annonser med mera för att få inkomster.
+                                mobil versionen kommer att kosta cirka 5 kronor.
+                                <br/>
+                                <br/>
+
+                            </p>
+                        </div>
+                        <div class="invisible" id="KontaktaOss">
+                            <h1>
+
+                            </h1>
+                            <br/>
+                            <form action="/SendMail.php">
+                                <div class="TForm">
+                                    <h3 class="KF">Kontakt Formulär</h3>
+                                    <label class="LBLF">Namn:</label>
+                                    <label class="RequiredD" id="Name">*</label>
+                                    <br/>
+                                    <input class="InputForm" name="NameD" placeholder="Skriv Här" onkeyup="SubmitFormData()">
+                                    <br/>
+                                    <label class="LBLF">Email:</label>
+                                    <label class="RequiredD" id="Email">*</label>
+                                    <br/>
+                                    <input class="InputForm"  name="EmailD" type="email" placeholder="Skriv Här" onkeyup="SubmitFormData()">
+                                    <br/>
+                                    <label class="LBLF">Verifiering: Vad är 2+5:</label>
+                                    <label class="RequiredD" id="Verifi">*</label>
+                                    <br/>
+                                    <input class="InputForm"  name="Veri" type="text" placeholder="Skriv Här" onkeyup="SubmitFormData()">
+                                    <br/>
+                                    <label class="LBLF">Medelande:</label>
+                                    <label class="RequiredD" id="Message">*</label>
+                                    <br/>
+                                    <textarea class="TextAreaForm"  name="MessageD" placeholder="Skriv Här"onkeyup="SubmitFormData()"></textarea>
+                                    <div class="ButtonHolder">
+                                        <input type="submit" value="Send" id="SubmitForm">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll_div" id="Scroll_holder">
+                <div class="scroll_drag" id="ScrollD">
+
+                </div>
+            </div>
+            <div class="scroll_divX" id="Scroll_holder2">
+                <div class="scroll_dragX" id="ScrollDX">
+
+                </div>
+            </div>
+            <div class="stylescroll">
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+
+</html>
